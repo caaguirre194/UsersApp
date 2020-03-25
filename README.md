@@ -5,9 +5,13 @@ Using:
 * [x] [Ionic](https://ionicframework.com/) 
 * [x] [Firebase](https://firebase.google.com/?hl=es)
 
-
 <a href="https://ionicframework.com/"><img src="/img/ionic.png" align="left" height="48" width="48" ></a>
 <a href="https://firebase.google.com/?hl=es"><img src="/img/firebase.png" align="left" height="48" width="48" ></a>  
+
+ Autor:
+*  [GitHub](https://github.com/caaguirre194)
+	 @caaguirre194
+	 
 <br>
 
 # Visualización:
@@ -16,9 +20,5 @@ Using:
 <img src="/img/remember.png" align="left" width="200">
 <img src="/img/home.png" align="left" width="200">
 
-
-Autor:
-*  [GitHub](https://github.com/caaguirre194)
-	 @caaguirre194
 
 
