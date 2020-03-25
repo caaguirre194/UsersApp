@@ -14,13 +14,13 @@ Using:
 ## Login:|  ## Registro:
 
 
-<img src="/img/login.png" align="left" width="250"> <img src="/img/signin.png" align="left" width="250">
-<img src="/img/remember.png" align="left" width="250"><img src="/img/home.png" align="left" width="250">
-
-
-
+<img src="/img/login.png" align="" width="250"> 
+<img src="/img/signin.png" align="" width="250">
+<br>
+<img src="/img/remember.png" align="" width="250">
+<img src="/img/home.png" align="" width="250">
 
 <br>
 Autor:
 *  [GitHub](https://github.com/caaguirre194)
-	 @caaguirre194
+@caaguirre194
