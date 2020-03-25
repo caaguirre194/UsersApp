@@ -1,0 +1,111 @@
+<ion-content>
+  <app-header titulo="PO. SCORAD"></app-header>
+  <ion-progress-bar [value]="porcentaje" color="derm"></ion-progress-bar>
+
+  <ion-slides
+    pager="true"
+    class="slides-main"
+    (ionSlideDidChange)="slideChanged()"
+  >
+    <ion-slide class="slide-main">
+      <app-body></app-body>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-card expand="full" (click)="openModal(1, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">1</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(2, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">2</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(3, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">3</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(4, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">4</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-3">
+      <ion-label id="title_slide3">{{
+        "PAGES.MAIN.TITLE_SLIDE3" | translate
+      }}</ion-label>
+      <ion-list id="list-range" class="swiper-no-swiping">
+        <br />
+        <br />
+        <br />
+        <ion-label id="first_range">{{
+          "PAGES.MAIN.RANGE_1" | translate
+        }}</ion-label>
+        <br />
+        <ion-item>
+          <ion-range
+            class="derm_range"
+            min="0"
+            max="100"
+            pin="true"
+            color="derm"
+            mode="ios"
+          >
+            <ion-label slot="start">0</ion-label>
+            <ion-label slot="end">100</ion-label>
+          </ion-range>
+        </ion-item>
+        <br />
+        <ion-label id="second_range">{{
+          "PAGES.MAIN.RANGE_2" | translate
+        }}</ion-label>
+        <br />
+        <ion-item>
+          <ion-range
+            class="derm_range"
+            min="0"
+            max="100"
+            pin="true"
+            color="derm"
+            mode="ios"
+          >
+            <ion-label slot="start">0</ion-label>
+            <ion-label slot="end">100</ion-label>
+          </ion-range>
+        </ion-item>
+        <br /><br />
+        <ion-item>
+          <ion-button
+            id="btn-calculate"
+            color="dark"
+            (click)="calculate()"
+            expand="block"
+          >
+            {{ "PAGES.MAIN.CALCULATE" | translate }}
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

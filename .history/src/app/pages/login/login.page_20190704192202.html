@@ -1,0 +1,65 @@
+<ion-content padding>
+  <ion-header>
+    <ion-toolbar>
+      <app-flag></app-flag>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card id="card-login">
+    <ion-card-header>
+      <ion-card-title id="title-login" color="derm">{{
+        "PAGES.LOG_IN.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/login.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.LOG_IN.EMAIL" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.LOG_IN.PASSWORD" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error" style="display: none">
+        {{ "PAGES.LOG_IN.MSG_ERROR" | translate }}</ion-label
+      >
+
+      <br />
+      <br />
+      <ion-button
+        id="btn-login"
+        color="derm5"
+        (click)="onSubmitLogin()"
+        expand="block"
+        >{{ "PAGES.LOG_IN.LOG_IN" | translate }}</ion-button
+      >
+      <br />
+      <div id="login-bottom">
+        <br />
+        <a routerLink="/remember">{{ "PAGES.LOG_IN.REMEMBER" | translate }}</a>
+        <br />
+        <br />
+        <a routerLink="/signin">{{ "PAGES.LOG_IN.SIGN_IN" | translate }}</a>
+      </div>
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-content padding>
+  <ion-header>
+    <ion-toolbar>
+      <app-flag></app-flag>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card id="card-init">
+    <ion-card-header>
+      <ion-card-title id="title-init" color="derm">{{
+        "PAGES.INIT.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/init.svg" alt="" />
+      <br />
+      <ion-item> {{ "PAGES.INIT.CONTENT" | translate }} </ion-item>
+
+      <br />
+      <ion-button
+        id="btn-login"
+        color="derm5"
+        expand="block"
+        routerLink="/login"
+      >
+        {{ "PAGES.INIT.LOG_IN" | translate }}</ion-button
+      >
+      <ion-button
+        id="btn-login"
+        color="derm10"
+        expand="block"
+        routerLink="/signin"
+      >
+        {{ "PAGES.INIT.SIGN_IN" | translate }}</ion-button
+      >
+      <br />
+      <div id="init-bottom"></div>
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

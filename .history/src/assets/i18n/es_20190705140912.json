@@ -1,0 +1,56 @@
+{
+  "PAGES": {
+    "INIT": {
+      "TITLE": "Dermatopic",
+      "LOG_IN": "Iniciar Sesión",
+      "SIGN_IN": "Registrarme",
+      "CONTENT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    "LOG_IN": {
+      "REMEMBER": "¿Olvidaste tu contraseña?",
+      "SIGN_IN": "Registrarme",
+      "MSG_ERROR": "El email y contraseña que ingresaste no coinciden con nuestros registros. Por favor, revisa e inténtalo de nuevo.",
+      "PASSWORD": "Contraseña",
+      "EMAIL": "Correo",
+      "LOG_IN": "Iniciar Sesión",
+      "TITLE": "Inicio Dermatopic"
+    },
+    "REMEMBER": {
+      "EMAIL": "Correo",
+      "TITLE": "Recordar contraseña",
+      "SEND": "Enviar",
+      "HEADER": "Recordar"
+    },
+    "SIGN_IN": {
+      "EMAIL": "Correo",
+      "TITLE": "Registro Dermatopic",
+      "SIGN_IN": "Registro",
+      "HEADER": "Registro",
+      "NAME": "Nombre",
+      "LASTNAME": "Apellido",
+      "PASSWORD": "Contraseña",
+      "TITLE_TERM": "Términos y condiciones",
+      "CONTENT_TERM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "TERM": "Acepto los terminos y condiciones",
+      "ACCEPT_TERM": "Aceptar",
+      "DECLINE_TERM": "Declinar",
+      "REPEAT_PASSWORD": "Repetir Contraseña",
+      "MSG_ERROR_EMAIL": "Debes ingresar un email valido",
+      "MSG_ERROR_PASSWORD": "La contraseña debe poseer almenos 5 digitos",
+      "MSG_ERROR_PASSWORD2": "Las contraseñas deben coincidir",
+      "MSG_ERROR_NAME": "Debes ingresar un nombre valido",
+      "MSG_ERROR_LASTNAME": "Debes ingresar un apellido valido",
+      "MSG_ERROR_TERM": "Debes aceptar los terminos y condiciones"
+    },
+    "MAIN": {
+      "TITLE_SLIDE3": "Sintomas Subjetivos",
+      "TITLE_SLIDE2": "Intensidad de los sintomas",
+      "RANGE_1": "Transtorno del sueño",
+      "RANGE_2": "Picazón",
+      "CALCULATE": "Calcular"
+    },
+    "HOME": {
+      "TITLE": "INICIO"
+    }
+  }
+}

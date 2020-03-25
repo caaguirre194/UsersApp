@@ -1,0 +1,28 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons style="width: 100%">
+        <ion-menu-button
+          color="dark"
+          menu="firstMenu"
+          class="ion-float-left"
+        ></ion-menu-button>
+        <app-flag></app-flag>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <app-menu (clickExit)="logOut($event)"></app-menu>
+  <ion-card id="card-home">
+    <ion-card-header>
+      <ion-card-title id="title-home" color="derm">{{
+        "PAGES.HOME.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/home.svg" alt="" />
+    </ion-card-content>
+  </ion-card>
+
+  <ion-router-outlet id="principal"></ion-router-outlet>
+</ion-content>

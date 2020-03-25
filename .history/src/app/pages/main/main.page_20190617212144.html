@@ -1,0 +1,83 @@
+<ion-content>
+  <app-header titulo="PO. SCORAD"></app-header>
+  <ion-progress-bar></ion-progress-bar>
+
+  <ion-slides pager="true" class="slides-main">
+    <ion-slide class="slide-main">
+      <app-body></app-body>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-card expand="full" (click)="openModal(1, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">1</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(2, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">2</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(3, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">3</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(4, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">4</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-list id="list-range">
+        <ion-item>
+          <ion-label id="first_range">Slide 3</ion-label>
+          <ion-range
+            class="derm_range"
+            min="0"
+            max="100"
+            pin="true"
+            color="derm"
+            mode="ios"
+          >
+            <ion-label slot="start">0</ion-label>
+            <ion-label slot="end">100</ion-label>
+          </ion-range>
+        </ion-item>
+        <ion-item>
+          <ion-label id="second_range">Slide 3</ion-label>
+          <ion-range
+            class="derm_range"
+            min="0"
+            max="100"
+            pin="true"
+            color="derm"
+            mode="ios"
+          >
+            <ion-label slot="start">0</ion-label>
+            <ion-label slot="end">100</ion-label>
+          </ion-range>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

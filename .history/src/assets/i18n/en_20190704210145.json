@@ -1,0 +1,48 @@
+{
+  "PAGES": {
+    "LOG_IN": {
+      "REMEMBER": "Did you forget your password?",
+      "SIGN_IN": "Sign in",
+      "MSG_ERROR": "The username and password you entered did not match our records. Please double-check and try again.",
+      "PASSWORD": "Password",
+      "EMAIL": "Email",
+      "LOG_IN": "log in",
+      "TITLE": "Log in Dermatopic"
+    },
+    "REMEMBER": {
+      "EMAIL": "Email",
+      "TITLE": "Remember password",
+      "SEND": "Send",
+      "HEADER": "Remember"
+    },
+    "SIGN_IN": {
+      "EMAIL": "Email",
+      "TITLE": "Sign in Dermatopic",
+      "SIGN_IN": "Sign in",
+      "HEADER": "Sign in",
+      "NAME": "Name",
+      "LASTNAME": "Last Name",
+      "PASSWORD": "Password",
+      "TITLE_TERM": "Terms and Conditions",
+      "CONTENT_TERM": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "TERM": "I accept the terms and conditions",
+      "ACCEPT_TERM": "Accept",
+      "REPEAT_PASSWORD": "Repeat Password",
+      "MSG_ERROR_EMAIL": "You must enter a valid email",
+      "MSG_ERROR_PASSWORD": "The password must have at least 6 digits",
+      "MSG_ERROR_PASSWORD2": "Passwords must match",
+      "MSG_ERROR_NAME": "You must enter a valid name",
+      "MSG_ERROR_LASTNAME": "You must enter a valid last name"
+    },
+    "MAIN": {
+      "TITLE_SLIDE3": "Subjective Symptoms",
+      "TITLE_SLIDE2": "Intensity of symptoms",
+      "RANGE_1": "Sleep disorder",
+      "RANGE_2": "Itch",
+      "CALCULATE": "Calculate"
+    },
+    "HOME": {
+      "TITLE": "HOME"
+    }
+  }
+}

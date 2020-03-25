@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item detail *ngFor="let lang of langs" (click)="clickLang(lang)">
+    <span class="flag-icon flag-icon-{{ lang }}"></span>
+    <ion-label>{{ lang }}</ion-label>
+  </ion-item>
+</ion-list>

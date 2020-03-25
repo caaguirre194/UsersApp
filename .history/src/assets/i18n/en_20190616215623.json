@@ -1,0 +1,29 @@
+{
+  "PAGES": {
+    "LOGIN": {
+      "REMEMBER": "Did you forget your password?",
+      "SIGN_IN": "Sign in",
+      "MSG_ERROR": "The username and password you entered did not match our records. Please double-check and try again.",
+      "PASSWORD": "Password",
+      "EMAIL": "Email",
+      "LOGIN": "log in",
+      "TITLE": "Log in DermApp"
+    },
+    "REMEMBER": {
+      "EMAIL": "Email",
+      "TITLE": "Remember password",
+      "SEND": "Send",
+      "HEADER": "Remember"
+    },
+    "SIGN_IN": {
+      "EMAIL": "Email",
+      "TITLE": "Sign in DermApp",
+      "SIGN_IN": "Sign in",
+      "HEADER": "Sign in",
+      "NAME": "Name",
+      "LAST_NAME": "Last Name",
+      "PASSWORD": "Password",
+      "REPEAT_PASSWORD": "Repeat Password"
+    }
+  }
+}

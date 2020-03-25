@@ -1,0 +1,157 @@
+<ion-content>
+  <app-header titulo="Registro"></app-header>
+
+  <ion-card id="card-login">
+    <ion-card-header>
+      <ion-card-title id="title-login">Login DermApp</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/dermatologia.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="name"
+          name="name"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="lastname"
+          name="lastname"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Tipo de piel</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="type_skin"
+          name="type_skin"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fecha de nacimiento</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="birth_date"
+          name="birth_date"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Imagen</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="img"
+          name="img"
+        ></ion-input>
+      </ion-item>
+
+      <br />
+      <br />
+      <ion-button
+        id="btn-signin"
+        color="dark"
+        (click)="onSubmitSignin()"
+        expand="block"
+        >Registro</ion-button
+      >
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+
+  <br />
+  <br />
+  <ion-segment [(ngModel)]="selectedView">
+    <ion-segment-button value="devs">
+      <ion-label>Developer</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="products">
+      <ion-label>Products</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="selectedView">
+    <div *ngSwitchCase="'devs'">
+      <ion-item>
+        <ion-label position="stacked">What\'s your name?</ion-label>
+        <ion-input
+          [(ngModel)]="developer.name"
+          placeholder="Developer Name"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked"
+          >What are your special skills (comma separated)?</ion-label
+        >
+        <ion-input
+          [(ngModel)]="developer.skills"
+          placeholder="Special Skills"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Your image URL</ion-label>
+        <ion-input
+          [(ngModel)]="developer.img"
+          placeholder="https://..."
+        ></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="addDeveloper()"
+        >Add Developer Info</ion-button
+      >
+
+      <ion-list>
+        <ion-item
+          button
+          *ngFor="let dev of developers"
+          [routerLink]="['/', 'developers', dev.id]"
+        >
+          <ion-avatar slot="start">
+            <img [src]="dev.img" />
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ dev.name }}</h2>
+            <p>{{ dev.skills }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div *ngSwitchCase="'products'">
+      <ion-item>
+        <ion-label position="stacked">Product name</ion-label>
+        <ion-input [(ngModel)]="product.name" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Creator?</ion-label>
+        <ion-select [(ngModel)]="product.creator">
+          <ion-select-option *ngFor="let dev of developers" [value]="dev.id">{{
+            dev.name
+          }}</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button expand="block" (click)="addProduct()">Add Product</ion-button>
+
+      <ion-list>
+        <ion-item *ngFor="let prod of products | async">
+          <ion-label>
+            <h2>{{ prod.name }}</h2>
+            <p>Created by: {{ prod.creator }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

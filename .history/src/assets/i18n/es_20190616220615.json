@@ -1,0 +1,30 @@
+{
+  "PAGES": {
+    "LOG_IN": {
+      "REMEMBER": "¿Olvidaste tu contraseña?",
+      "SIGN_IN": "Registrarme",
+      "MSG_ERROR": "El email y contraseña que ingresaste no coinciden con nuestros registros. Por favor, revisa e inténtalo de nuevo.",
+      "PASSWORD": "Contraseña",
+      "EMAIL": "Correo",
+      "LOG_IN": "Iniciar Sesión",
+      "TITLE": "Inicio DermApp"
+    },
+    "REMEMBER": {
+      "EMAIL": "Correo",
+      "TITLE": "Recordar contraseña",
+      "SEND": "Enviar",
+      "HEADER": "Recordar"
+    },
+    "SIGN_IN": {
+      "EMAIL": "Correo",
+      "TITLE": "Registro DermApp",
+      "SIGN_IN": "Registro",
+      "HEADER": "Registro",
+      "NAME": "Nombre",
+      "LAST_NAME": "Apellido",
+      "PASSWORD": "Contraseña",
+      "REPEAT_PASSWORD": "Repetir Contraseña",
+      "BIRTH_DATE": "Date of Birth"
+    }
+  }
+}

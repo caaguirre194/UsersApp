@@ -1,0 +1,76 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title text-capitalize>
+      {{ name }}
+    </ion-title>
+    <ion-buttons slot="start" id="buttons-header">
+      <ion-button
+        color="#fff"
+        (click)="salir()"
+        slot="end"
+        class="ion-float-right"
+      >
+        <ion-icon color="derm" name="close" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <h2 id="title_slide"></h2>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card expand="full">
+          <ion-card-header>
+            <ion-card-title id="" color="derm">1</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{ urlImage }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card expand="full">
+          <ion-card-header>
+            <ion-card-title id="" color="derm">2</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{ urlImage }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card expand="full">
+          <ion-card-header>
+            <ion-card-title id="" color="derm">3</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{ urlImage }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card expand="full">
+          <ion-card-header>
+            <ion-card-title id="" color="derm">4</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{ urlImage }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button expand="full" (click)="salir()">
+    Salir
+  </ion-button>
+</ion-content>

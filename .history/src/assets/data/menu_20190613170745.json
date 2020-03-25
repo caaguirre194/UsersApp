@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "home",
+    "name": "Inicio",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "man",
+    "name": "PO. SCORAD",
+    "redirectTo": "/main"
+  },
+  {
+    "icon": "man",
+    "name": "EASY",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "man",
+    "name": "DLQI",
+    "redirectTo": "/main"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

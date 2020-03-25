@@ -1,0 +1,53 @@
+<ion-content>
+  <app-header titulo="PO. SCORAD"></app-header>
+
+  <ion-slides pager="true" class="slides-main">
+    <ion-slide class="slide-main">
+      <app-body></app-body>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-card expand="full" (click)="openModal(1, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">1</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(2, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">2</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(3, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">3</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(4, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">4</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

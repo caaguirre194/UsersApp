@@ -1,0 +1,21 @@
+<ion-menu side="start" menuId="firstMenu" contentId="principal" type="overlay">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>DermApp</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle *ngFor="let c of componentes | async">
+        <ion-item *ngIf="c.name != 'Salir'" [routerLink]="c.redirectTo">
+          <ion-icon color="dark" slot="start" [name]="c.icon"></ion-icon>
+          <ion-label>{{ c.name }}</ion-label>
+        </ion-item>
+        <ion-item *ngIf="c.name == 'Salir'" (click)="onClickExit()">
+          <ion-icon color="dark" slot="start" [name]="c.icon"></ion-icon>
+          <ion-label>{{ c.name }}</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

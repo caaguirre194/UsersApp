@@ -1,0 +1,23 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title text-capitalize>
+      {{ "PAGES.SIGN_IN.TITLE_TERM" | translate }}
+    </ion-title>
+    <ion-buttons slot="end" id="buttons-header">
+      <ion-button
+        color="#fff"
+        (click)="exit()"
+        slot="end"
+        class="ion-float-right"
+      >
+        <ion-icon color="derm" name="close" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  {{ "PAGES.SIGN_IN.CONTENT_TERM" | translate }}
+  <ion-button id="btn-signin" color="derm5" (click)="addUser()" expand="block">{{ "PAGES.SIGN_IN.SIGN_IN" | translate }}
+  </ion-button
+</ion-content>

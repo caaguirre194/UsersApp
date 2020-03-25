@@ -1,0 +1,8 @@
+{
+  "PAGES": {
+    "LOGIN": {
+      "HELLO": "hola mundo",
+      "GREETING": "Hola <strong>{{name}}</strong>, un gusto conocerte."
+    }
+  }
+}

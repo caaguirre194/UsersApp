@@ -1,0 +1,9 @@
+{
+  "PAGES": {
+    "LOGIN": {
+      "REMEMBER": "¿Olvidaste tu contraseña?",
+      "SIGNIN": "Registrarme",
+      "MSG_ERROR": "El email y contraseña que ingresaste no coinciden con nuestros registros. Por favor, revisa e inténtalo de nuevo."
+    }
+  }
+}

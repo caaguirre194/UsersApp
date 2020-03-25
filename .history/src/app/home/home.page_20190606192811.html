@@ -1,0 +1,16 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button
+          color="dark"
+          menu="firstMenu"
+          side="start"
+        ></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <app-menu (clickExit)="logOut($event)"></app-menu>
+  heyy
+  <ion-router-outlet id="principal"></ion-router-outlet>
+</ion-content>

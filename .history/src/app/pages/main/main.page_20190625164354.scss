@@ -1,0 +1,41 @@
+.slides-main {
+  height: 80%;
+}
+.slide-main {
+  padding-top: 40px;
+  height: 260px;
+}
+
+ion-slides {
+  --bullet-background: grey !important;
+  --bullet-background-active: #ff6347 !important;
+}
+
+.derm_range,
+#list-range {
+  width: 90%;
+}
+
+#title_slide {
+  color: #ff6347;
+  font-weight: 600;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#btn-calculate {
+  font-size: 16px !important;
+  height: 55px !important;
+  background-color: #222428;
+  border-radius: 27px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 90%;
+  text-align: center;
+}
+
+.symptom {
+  height: 100px;
+}

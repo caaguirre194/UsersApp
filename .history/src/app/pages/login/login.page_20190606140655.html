@@ -1,0 +1,50 @@
+<ion-content padding>
+  <ion-card id="card-login">
+    <ion-card-header>
+      <ion-card-title id="title-login">Login DermApp</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/login.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <br />
+      <br />
+      <ion-button
+        id="btn-login"
+        color="dark"
+        (click)="onSubmitLogin()"
+        expand="block"
+        >Login</ion-button
+      >
+      <br />
+      <div id="login-bottom">
+        <ion-checkbox color="dark"></ion-checkbox>
+        <ion-label position="floating"> Recordarme</ion-label>
+        <br />
+        <br />
+        <a routerLink="/">¿Olvidaste tu contraseña?</a>
+        <a routerLink="/signin">Registrarme</a>
+      </div>
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,123 @@
+<ion-content>
+  <app-header titulo='{{
+          "PAGES.SIGNIN.HEADER" | translate
+        }}''></app-header>
+
+  <ion-card id="card-signin">
+    <ion-card-header>
+      <ion-card-title id="title-signin" color="derm">{{
+        "PAGES.SIGNIN.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/signin.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.SIGNIN.NAME" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="user.name"
+          name="name"
+          required
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.SIGNIN.LASTNAME" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="user.lastname"
+          required
+          name="lastname"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.SIGNIN.EMAIL" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          required
+          [(ngModel)]="user.email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          required
+          [(ngModel)]="user.password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Repetir Contraseña</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          required
+          [(ngModel)]="user.password2"
+          name="password2"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Tipo de piel</ion-label>
+        <ion-select
+          [(ngModel)]="user.type_skin"
+          value="ca"
+          okText="Okay"
+          cancelText="Dismiss"
+        >
+          <ion-select-option value="ca">Caucásica</ion-select-option>
+          <ion-select-option value="as">Asiática</ion-select-option>
+          <ion-select-option value="os">Oscura</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Fecha de nacimiento</ion-label>
+
+        <ion-datetime
+          [(ngModel)]="user.birth_date"
+          required
+          display-format="MM/DD/YYYY"
+        ></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Imagen</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="user.img"
+          name="img"
+        ></ion-input>
+      </ion-item>
+
+      <br />
+      <br />
+      <ion-button
+        id="btn-signin"
+        color="dark"
+        (click)="addUser()"
+        expand="block"
+        >Registro</ion-button
+      >
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

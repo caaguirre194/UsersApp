@@ -1,0 +1,37 @@
+[
+  {
+    "icon": "home",
+    "name": "Inicio",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "man",
+    "name": "PO. SCORAD",
+    "redirectTo": "/main"
+  },
+  {
+    "icon": "man",
+    "name": "EASY",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "analytics",
+    "name": "DLQI",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "analytics",
+    "name": "Escalas Analogas",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "paper",
+    "name": "HADS",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

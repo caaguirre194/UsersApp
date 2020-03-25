@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item detail *ngFor="let lang of langs" (click)="clickLang(lang)">
+    <ion-label>{{ lang }}</ion-label>
+    <ion-checkbox color="derm" mode="ios" slot="end"></ion-checkbox>
+  </ion-item>
+</ion-list>

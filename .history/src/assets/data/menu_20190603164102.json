@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "man",
+    "name": "Cuerpo",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "configuracion",
+    "name": "Configuración",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

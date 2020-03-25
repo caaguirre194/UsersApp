@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button
+        color="dark"
+        menu="firstMenu"
+        side="start"
+      ></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-menu (clickExit)="logOut()"></app-menu>
+
+  <!-- <ion-button id="principal" (click)=>Desconectarse</ion-button>-->
+</ion-content>

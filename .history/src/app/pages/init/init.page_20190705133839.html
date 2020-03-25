@@ -1,0 +1,66 @@
+<ion-content padding>
+  <ion-header>
+    <ion-toolbar>
+      <app-flag></app-flag>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card id="card-init">
+    <ion-card-header>
+      <ion-card-title id="title-init" color="derm">{{
+        "PAGES.INIT.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/init.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.INIT.TITLE" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.INIT.TITLE" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          [(ngModel)]="password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error" style="display: none">
+        {{ "PAGES.INIT.TITLE" | translate }}</ion-label
+      >
+
+      <br />
+      <br />
+      <ion-button
+        id="btn-login"
+        color="derm5"
+        (click)="onSubmitLogin()"
+        expand="block"
+      >
+        {{ "PAGES.INIT.TITLE" | translate }}</ion-button
+      >
+      <br />
+      <div id="login-bottom">
+        <br />
+        <a routerLink="/remember">{{ "PAGES.INIT.TITLE" | translate }}</a>
+        <br />
+        <br />
+        <a routerLink="/signin">{{ "PAGES.INIT.TITLE" | translate }}</a>
+      </div>
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,12 @@
+{
+  "PAGES": {
+    "LOGIN": {
+      "REMEMBER": "Did you forget your password?",
+      "SIGNIN": "Sign in",
+      "MSG_ERROR": "The username and password you entered did not match our records. Please double-check and try again.",
+      "PASSWORD": "Password",
+      "EMAIL": "Email",
+      "LOGIN": "login"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+<ion-content>
+  <app-header titulo="{{ 'PAGES.SIGN_IN.HEADER' | translate }}"></app-header>
+
+  <ion-card id="card-signin">
+    <ion-card-header>
+      <ion-card-title id="title-signin" color="derm">{{
+        "PAGES.SIGN_IN.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/signin.svg" alt="" />
+      <ion-item>
+        <ion-label
+          [class]="classLabelName"
+          id="label_name"
+          position="floating"
+          >{{ "PAGES.SIGN_IN.NAME" | translate }}</ion-label
+        >
+        <ion-input
+          #messageInputName
+          color="dark"
+          type="text"
+          [(ngModel)]="user.name"
+          name="name"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_name" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_NAME" | translate }}</ion-label
+      >
+
+      <ion-item>
+        <ion-label
+          [class]="classLabelLastName"
+          id="label_lastname"
+          position="floating"
+          >{{ "PAGES.SIGN_IN.LASTNAME" | translate }}
+        </ion-label>
+        <ion-input
+          #messageInputLastName
+          color="dark"
+          type="text"
+          [(ngModel)]="user.lastname"
+          name="name"
+          required
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_lastname" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_LASTNAME" | translate }}</ion-label
+      >
+
+      <ion-item>
+        <ion-label
+          [class]="classLabelEmail"
+          id="label_email"
+          position="floating"
+          >{{ "PAGES.SIGN_IN.EMAIL" | translate }}</ion-label
+        >
+        <ion-input
+          #messageInputEmail
+          color="dark"
+          type="text"
+          required
+          [(ngModel)]="user.email"
+          name="email"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_email" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_EMAIL" | translate }}</ion-label
+      >
+
+      <ion-item>
+        <ion-label
+          [class]="classLabelPassword"
+          id="label_password"
+          position="floating"
+          >{{ "PAGES.SIGN_IN.PASSWORD" | translate }}</ion-label
+        >
+        <ion-input
+          #messageInputPassword
+          color="dark"
+          type="password"
+          required
+          [(ngModel)]="user.password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_password" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_PASSWORD" | translate }}</ion-label
+      >
+
+      <ion-item>
+        <ion-label
+          [class]="classLabelPassword2"
+          id="label_password2"
+          position="floating"
+          >{{ "PAGES.SIGN_IN.REPEAT_PASSWORD" | translate }}</ion-label
+        >
+        <ion-input
+          #messageInputPassword2
+          color="dark"
+          type="password"
+          required
+          id="password2"
+          name="password2"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_password2" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_PASSWORD2" | translate }}</ion-label
+      >
+      <ion-item (click)="openModalTerm()">
+        <ion-checkbox mode="ios" color="derm"></ion-checkbox>
+        <a routerLink="/">{{ "PAGES.SIGN_IN.TERM" | translate }}</a>
+      </ion-item>
+      <br />
+      <br />
+      <ion-button
+        id="btn-signin"
+        color="derm5"
+        (click)="addUser()"
+        expand="block"
+        >{{ "PAGES.SIGN_IN.SIGN_IN" | translate }}</ion-button
+      >
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

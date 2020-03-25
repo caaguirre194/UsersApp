@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "home",
+    "name": "Inicio",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "man",
+    "name": "Cuerpo",
+    "redirectTo": "/Body"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

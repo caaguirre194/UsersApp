@@ -1,0 +1,7 @@
+{
+  "name": "Dermatopic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

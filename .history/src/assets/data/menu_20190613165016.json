@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "home",
+    "name": "Inicio",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "man",
+    "name": "PO. SCORAD",
+    "redirectTo": "/main"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

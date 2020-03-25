@@ -1,0 +1,85 @@
+<ion-content>
+  <app-header titulo="{{ 'PAGES.SIGN_IN.HEADER' | translate }}"></app-header>
+
+  <ion-card id="card-signin">
+    <ion-card-header>
+      <ion-card-title id="title-signin" color="derm">{{
+        "PAGES.SIGN_IN.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <img class="icon" src="assets/icon/signin.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.SIGN_IN.NAME" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          [(ngModel)]="user.name"
+          name="name"
+          required
+        ></ion-input>
+      </ion-item>
+
+      <ion-item id="input_email">
+        <ion-label position="floating">{{
+          "PAGES.SIGN_IN.EMAIL" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="text"
+          required
+          [(ngModel)]="user.email"
+          name="email"
+          id="input_email2"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_email" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_EMAIL" | translate }}</ion-label
+      >
+
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.SIGN_IN.PASSWORD" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          required
+          [(ngModel)]="user.password"
+          name="password"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.SIGN_IN.REPEAT_PASSWORD" | translate
+        }}</ion-label>
+        <ion-input
+          color="dark"
+          type="password"
+          required
+          [(ngModel)]="password2"
+          name="password2"
+        ></ion-input>
+      </ion-item>
+      <ion-label color="derm" id="msg_error_password" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_PASSWORD" | translate }}</ion-label
+      >
+
+      <br />
+      <br />
+      <ion-button
+        id="btn-signin"
+        color="dark"
+        (click)="addUser()"
+        expand="block"
+        >{{ "PAGES.SIGN_IN.SIGN_IN" | translate }}</ion-button
+      >
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>

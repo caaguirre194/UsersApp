@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "man",
+    "name": "Cuerpo",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "create",
+    "name": "Configuración",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "create",
+    "name": "Configuración",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

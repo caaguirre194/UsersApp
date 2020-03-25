@@ -1,0 +1,40 @@
+{
+  "PAGES": {
+    "LOG_IN": {
+      "REMEMBER": "Did you forget your password?",
+      "SIGN_IN": "Sign in",
+      "MSG_ERROR": "The username and password you entered did not match our records. Please double-check and try again.",
+      "PASSWORD": "Password",
+      "EMAIL": "Email",
+      "LOG_IN": "log in",
+      "TITLE": "Log in DermApp"
+    },
+    "REMEMBER": {
+      "EMAIL": "Email",
+      "TITLE": "Remember password",
+      "SEND": "Send",
+      "HEADER": "Remember"
+    },
+    "SIGN_IN": {
+      "EMAIL": "Email",
+      "TITLE": "Sign in DermApp",
+      "SIGN_IN": "Sign in",
+      "HEADER": "Sign in",
+      "NAME": "Name",
+      "PASSWORD": "Password",
+      "REPEAT_PASSWORD": "Repeat Password",
+      "MSG_ERROR_EMAIL": "You must enter a valid email.",
+      "MSG_ERROR_EMAIL": "You must enter a valid email."
+    },
+    "MAIN": {
+      "TITLE_SLIDE3": "Subjective Symptoms",
+      "TITLE_SLIDE2": "Intensity of symptoms",
+      "RANGE_1": "Sleep disorder",
+      "RANGE_2": "Itch",
+      "CALCULATE": "Calculate"
+    },
+    "HOME": {
+      "TITLE": "HOME"
+    }
+  }
+}

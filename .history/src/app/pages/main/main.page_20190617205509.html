@@ -1,0 +1,65 @@
+<ion-content>
+  <app-header titulo="PO. SCORAD"></app-header>
+  <ion-progress-bar></ion-progress-bar>
+
+  <ion-slides pager="true" class="slides-main">
+    <ion-slide class="slide-main">
+      <app-body></app-body>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-card expand="full" (click)="openModal(1, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">1</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(2, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">2</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(3, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">3</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card expand="full" (click)="openModal(4, '')">
+        <ion-card-header>
+          <ion-card-title id="" color="derm">4</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{ urlImage }}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-list>
+        <ion-item class="derm_range">
+          <h1 id="first_range">Slide 3</h1>
+
+          <ion-range min="1" max="100" pin="true" color="derm"> </ion-range>
+        </ion-item>
+        <ion-item class="derm_range">
+          <h1 id="second_range">Slide 3</h1>
+
+          <ion-range min="1" max="100" pin="true" color="derm"> </ion-range>
+        </ion-item>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

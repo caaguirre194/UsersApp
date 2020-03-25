@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "home",
+    "name": "Inicio",
+    "redirectTo": "/home"
+  },
+  {
+    "icon": "man",
+    "name": "Cuerpo component",
+    "redirectTo": "/"
+  },
+  {
+    "icon": "man",
+    "name": "Cuerpo page",
+    "redirectTo": "/main"
+  },
+  {
+    "icon": "close",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+]

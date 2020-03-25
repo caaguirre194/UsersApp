@@ -1,0 +1,18 @@
+<ion-content>
+  <app-header titulo="Cuerpo"></app-header>
+
+  <ion-slides pager="true" class="slides-main">
+    <ion-slide class="slide-main">
+      <app-body></app-body>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <ion-button expand="full" (click)="openModal(1)">1</ion-button>
+      <ion-button expand="full" (click)="openModal(2)">2</ion-button>
+      <ion-button expand="full" (click)="openModal(3)">3</ion-button>
+      <ion-button expand="full" (click)="openModal(4)">4</ion-button>
+    </ion-slide>
+    <ion-slide class="slide-main">
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

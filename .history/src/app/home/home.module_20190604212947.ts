@@ -1,0 +1,29 @@
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { IonicModule } from "@ionic/angular";
+import { FormsModule } from "@angular/forms";
+import { RouterModule } from "@angular/router";
+
+import { HomePage } from "./home.page";
+import { MenuComponent } from "../components/menu/menu.component";
+import { BodyComponent } from "../components/body/body.component";
+import { MainPage } from "../pages/main/main.page";
+import { ComponentsModule } from "../components/components.module";
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    ComponentsModule,
+    MenuComponent,
+    RouterModule.forChild([
+      {
+        path: "",
+        component: HomePage
+      }
+    ])
+  ],
+  declarations: [HomePage]
+})
+export class HomePageModule {}

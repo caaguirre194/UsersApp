@@ -1,0 +1,21 @@
+<ion-item>
+  <ion-label>Language</ion-label>
+  <ion-select
+    value="brown"
+    ok-text="Okay"
+    cancel-text="Dismiss"
+    (ionChange)="changeLang($event)"
+  >
+    <ion-select-option *ngFor="let lang of langs" [value]="lang">
+      <span class="flag-icon flag-icon-{{ lang }}"></span>
+      {{ lang }}
+    </ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-list>
+  <ion-item detail *ngFor="let lang of langs" (click)="clickLang(lang)">
+    <span class="flag-icon flag-icon-{{ lang }}"></span>
+    <ion-label>{{ lang }}</ion-label>
+  </ion-item>
+</ion-list>

@@ -1,0 +1,29 @@
+<ion-content>
+  <app-header titulo="{{ 'PAGES.REMEMBER.HEADER' | translate }}"></app-header>
+  <ion-card id="card-remember">
+    <ion-card-header>
+      <ion-card-title id="title-remember" color="derm">{{
+        "PAGES.REMEMBER.TITLE" | translate
+      }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <img class="icon" src="assets/icon/remember.svg" alt="" />
+      <ion-item>
+        <ion-label position="floating">{{
+          "PAGES.REMEMBER.EMAIL" | translate
+        }}</ion-label>
+        <ion-input color="dark" type="email" name="email"></ion-input>
+      </ion-item>
+      <ion-label color="derm5" id="msg_error_name" style="display: none">
+        {{ "PAGES.SIGN_IN.MSG_ERROR_NAME" | translate }}</ion-label
+      >
+      <br />
+      <br />
+      <ion-button id="btn-remember" color="derm5" expand="block">{{
+        "PAGES.REMEMBER.SEND" | translate
+      }}</ion-button>
+      <br />
+      <br />
+    </ion-card-content>
+  </ion-card>
+</ion-content>
