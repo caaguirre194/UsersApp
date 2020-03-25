@@ -5,10 +5,10 @@ Using:
 * [x] [Ionic](https://ionicframework.com/) 
 * [x] [Firebase](https://firebase.google.com/?hl=es)
 
-![Logo](/img/ionic.png)
-<img src="/img/ionic.png" width="25" height="25">
-<a href="url"><img src="/img/ionic.png" align="left" height="48" width="48" ></a>
-![Logo](/img/firebase.png)
+
+<a href="https://ionicframework.com/"><img src="/img/ionic.png" align="left" height="48" width="48" ></a>
+<a href="https://firebase.google.com/?hl=es"><img src="/img/firebase.png" align="left" height="48" width="48" ></a>
+
 
 ## Visualización:
 # Login:
