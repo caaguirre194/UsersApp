@@ -11,15 +11,14 @@ Using:
 <br>
 
 # Visualización:
-## Login:
-<img src="/img/login.png" align="left" width="250">
-## Registro:
-<img src="/img/signin.png" align="right" width="250">
-<br><br>
-## Olvido de contraseña:
-<img src="/img/remember.png" align="left" width="250">
-## Home:
-<img src="/img/home.png" align="right" width="250">
+## Login:|  ## Registro:
+
+
+<img src="/img/login.png" align="left" width="250"> <img src="/img/signin.png" align="left" width="250">
+<img src="/img/remember.png" align="left" width="250"><img src="/img/home.png" align="left" width="250">
+
+
+
 
 <br>
 Autor:
