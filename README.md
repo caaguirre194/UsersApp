@@ -17,4 +17,8 @@ Using:
 <img src="/img/home.png" align="left" width="200">
 
 
+Autor:
+*  [GitHub](https://github.com/caaguirre194)
+	 @caaguirre194
+
 
