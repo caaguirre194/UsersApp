@@ -11,9 +11,9 @@ Using:
 
 # Visualización:
 
-| Login        | Sign in           | Remember        | Home           | 
-| ------------- |:-------------:|------------- |:-------------:|
-| <img src="/img/login.png" align="left" width="200">     | <img src="/img/signin.png" align="left" width="200"> | <img src="/img/remember.png" align="left" width="200">     | <img src="/img/home.png" align="left" width="200"> | 
+ Login| Sign in| Remember| Home
+ --|--|--|--
+ <img src="/img/login.png" align="left" width="200">|<img src="/img/signin.png" align="left" width="200">|<img src="/img/remember.png" align="left" width="200">|<img src="/img/home.png" align="left" width="200"> 
  
 
  Autor:
