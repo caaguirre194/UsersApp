@@ -13,11 +13,11 @@ Using:
 
 Login| Sign in
 --|--
-<img src="/img/login.png" align="left" width="250">|<img src="/img/signin.png" align="left" width="250">
+<img src="/img/login.png" align="left" width="350">|<img src="/img/signin.png" align="left" width="350">
 
 Remember| Home
 --|--
-<img src="/img/remember.png" align="left" width="250">|<img src="/img/home.png" align="left" width="250"> 
+<img src="/img/remember.png" align="left" width="350">|<img src="/img/home.png" align="left" width="350"> 
 
  Autor:
 *  [GitHub](https://github.com/caaguirre194)
